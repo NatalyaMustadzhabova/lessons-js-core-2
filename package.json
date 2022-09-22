@@ -9,7 +9,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
   },
   "devDependencies": {
     "eslint": "^8.23.1",
@@ -19,10 +22,7 @@
     "eslint-plugin-n": "^15.2.5",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.1",
-    "eslint-plugin-react": "^7.31.8",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1"
+    "eslint-plugin-react": "^7.31.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,7 +31,8 @@
     "eject": "react-scripts eject",
     "precommit": "lint-staged",
     "eslint": "node_modules/.bin/eslint src/",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
