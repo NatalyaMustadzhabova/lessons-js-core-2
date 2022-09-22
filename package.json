@@ -32,7 +32,8 @@
     "precommit": "lint-staged",
     "eslint": "node_modules/.bin/eslint src/",
     "lint-staged": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettier": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
