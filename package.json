@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "lessons-js-core-2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "precommit": "lint-staged",
-    "eslint": "node_modules/.bin/eslint src/",
+    "eslint": "eslint src/",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
     "prettier": "prettier --write ."
@@ -64,5 +64,17 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "description": "",
+  "main": "App.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatalyaMustadzhabova/lessons-js-core-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatalyaMustadzhabova/lessons-js-core-2/issues"
+  },
+  "homepage": "https://github.com/NatalyaMustadzhabova/lessons-js-core-2#readme"
 }
