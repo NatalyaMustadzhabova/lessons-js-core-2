@@ -1,0 +1,86 @@
+:root {
+    --background-color-blue: #459DF5;
+    --background-color-white: #FFFFFF;
+    --background-color-purple: #8055FF;
+    --background-color-black: #000000;
+}
+
+.header {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.firstLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secondLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondLine_firstBlock {
+    display: flex;
+    gap: 1rem;
+}
+
+.searchbar {
+    box-sizing: border-box;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid var(--background-color-blue);
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    padding: 0.5rem 0.25rem 0.5rem 2rem;
+    background-image: url(/src/shared/Icon/icons/search.svg); 
+    background-repeat: no-repeat;
+    background-position: 0.6rem;
+    background-size: auto 60%; 
+}
+
+.button {
+    display: flex;
+    height: 2rem;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+}
+
+.buttonColorBlue {
+    background-color: var(--background-color-blue);
+    fill: var(--background-color-white);
+    color: var(--background-color-white);
+    border: 0.0625rem solid var(--background-color-blue);
+}
+
+.buttonColorWhite {
+    background-color: var(--background-color-white);
+    fill: var(--background-color-blue);
+    color: var(--background-color-blue);
+    border: none;
+}
+
+.buttonMini {
+    width: 6.875rem;
+}
+
+.buttonSmall {
+    width: 7.06rem;
+}
+
+.buttonMedium {
+    width: 9.25rem;
+}
+
+.buttonBig {
+    width: 8.68rem;
+}
+

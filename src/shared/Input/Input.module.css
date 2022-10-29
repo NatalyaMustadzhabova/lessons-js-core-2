@@ -1,0 +1,15 @@
+input::-webkit-input-placeholder {
+    color: #BAD8F5;
+} 
+
+.prefix {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 0.8125rem;
+}
