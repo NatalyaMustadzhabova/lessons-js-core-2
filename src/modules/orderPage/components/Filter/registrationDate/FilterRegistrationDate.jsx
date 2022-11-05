@@ -1,8 +1,6 @@
 import { useState } from 'react'
-import Button from '../../../../../shared/Button/Button'
 import Input from '../../../../../shared/Input/Input'
-import styles from './../../Filter/Filter.module.css'
-import clsx from 'clsx'
+import styles from './FilterRegistrationDate.module.css'
 import { ReactComponent as IconXMedium } from '../../../../../shared/Icon/icons/x-medium.svg'
 
 export default function FilterRegistrationDate() {
@@ -29,50 +27,28 @@ export default function FilterRegistrationDate() {
     <div className={styles.block}>
       <div className={styles.searchbarIconPosition}>
         <Input
-          className={clsx(
-            styles.searchbar,
-            styles.searchbarMedium,
-            styles.searchbarIndentMedium
-          )}
-          placeholder={'dd.mm.yyyy'}
-          label={'Дата оформления'}
+          className={styles.searchbarIndentMedium}
+          placeholder="dd.mm.yyyy"
+          label="Дата оформления"
           value={valueDateFrom}
           prefix="c"
           onChange={handleChangeValueDateFrom}
+          onClick={handleClearValueDateFrom}
+          icon={IconXMedium}
+          size="medium"
         ></Input>
-        {valueDateFrom && (
-          <Button
-            className={clsx(
-              styles.searchbarButton,
-              styles.searchbarButtonPositionBig
-            )}
-            onClick={handleClearValueDateFrom}
-            icon={IconXMedium}
-          />
-        )}
       </div>
       <div className={styles.searchbarIconPosition}>
         <Input
-          className={clsx(
-            styles.searchbar,
-            styles.searchbarMedium,
-            styles.searchbarIndentBig
-          )}
-          placeholder={'dd.mm.yyyy'}
+          className={styles.searchbarIndentBig}
+          placeholder="dd.mm.yyyy"
           value={valueDateTo}
           prefix="по"
           onChange={handleChangeValueDateTo}
+          onClick={handleClearValueDateTo}
+          icon={IconXMedium}
+          size="medium"
         ></Input>
-        {valueDateTo && (
-          <Button
-            className={clsx(
-              styles.searchbarButton,
-              styles.searchbarButtonPositionSmall
-            )}
-            onClick={handleClearValueDateTo}
-            icon={IconXMedium}
-          />
-        )}
       </div>
     </div>
   )

@@ -1,8 +1,6 @@
 import { useState } from 'react'
-import Button from '../../../../../shared/Button/Button'
 import Input from '../../../../../shared/Input/Input'
-import styles from './../../Filter/Filter.module.css'
-import clsx from 'clsx'
+import styles from './../../Filter/orderAmount/FilterOrderAmount.module.css'
 import { ReactComponent as IconXMedium } from '../../../../../shared/Icon/icons/x-medium.svg'
 
 export default function FilterOrderAmount() {
@@ -29,50 +27,28 @@ export default function FilterOrderAmount() {
     <div className={styles.block}>
       <div className={styles.searchbarIconPosition}>
         <Input
-          className={clsx(
-            styles.searchbar,
-            styles.searchbarSmall,
-            styles.searchbarIndentBig
-          )}
-          placeholder={'₽'}
-          label={'Сумма заказа'}
+          className={styles.searchbarIndentBig}
+          placeholder="₽"
+          label="Сумма заказа"
           value={valueAmountFrom}
           prefix="от"
           onChange={handleChangeValueAmountFrom}
-        ></Input>
-        {valueAmountFrom && (
-          <Button
-            className={clsx(
-              styles.searchbarButton,
-              styles.searchbarButtonPositionBig
-            )}
-            onClick={handleClearValueAmountFrom}
-            icon={IconXMedium}
-          />
-        )}
+          onClick={handleClearValueAmountFrom}
+          icon={IconXMedium}
+          size="small"
+        />
       </div>
       <div className={styles.searchbarIconPosition}>
         <Input
-          className={clsx(
-            styles.searchbar,
-            styles.searchbarSmall,
-            styles.searchbarIndentBig
-          )}
-          placeholder={'₽'}
+          className={styles.searchbarIndentBig}
+          placeholder="₽"
           value={valueAmountTo}
           prefix="до"
           onChange={handleChangeValueAmountTo}
-        ></Input>
-        {valueAmountTo && (
-          <Button
-            className={clsx(
-              styles.searchbarButton,
-              styles.searchbarButtonPositionSmall
-            )}
-            onClick={handleClearValueAmountTo}
-            icon={IconXMedium}
-          />
-        )}
+          onClick={handleClearValueAmountTo}
+          icon={IconXMedium}
+          size="small"
+        />
       </div>
     </div>
   )

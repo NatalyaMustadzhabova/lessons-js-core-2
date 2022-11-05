@@ -1,15 +1,53 @@
+:root {
+    --background-color-blue: #459DF5;
+    --background-color-white: #FFFFFF;
+    --background-color-purple: #8055FF;
+    --background-color-black: #000000;
+}
+
 input::-webkit-input-placeholder {
     color: #BAD8F5;
-} 
+}
+
+.input {
+    box-sizing: border-box;
+    height: 2rem;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid var(--background-color-blue);
+    font-weight: 400;
+    font-size: 0.8125rem;
+    margin-top: 0.5rem;
+}
 
 .prefix {
     position: absolute;
     box-sizing: border-box;
     bottom: 0.5rem;
     left: 0.5rem;
-  }
+}
 
-  .text {
+.text {
     font-weight: 400;
     font-size: 0.8125rem;
+}
+
+.button {
+    position: absolute;
+    /*position: relative;*/
+    right: 0;
+    /*top: 1rem;*/
+    height: 1rem;
+}
+
+
+.sizeSmall {
+    width: 7.875rem;
+}
+
+.sizeMedium {
+    width: 8.875rem;
+}
+
+.sizeBig {
+    width: 12rem;
 }

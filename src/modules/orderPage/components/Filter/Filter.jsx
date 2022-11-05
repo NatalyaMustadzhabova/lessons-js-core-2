@@ -3,7 +3,6 @@ import FilterOrderStatus from './orderStatus/FilterOrderStatus'
 import FilterOrderAmount from './orderAmount/FilterOrderAmount'
 import Button from '../../../../shared/Button/Button'
 import styles from './Filter.module.css'
-import clsx from 'clsx'
 
 export default function Filter() {
   return (
@@ -11,7 +10,9 @@ export default function Filter() {
       <FilterRegistrationDate />
       <FilterOrderStatus />
       <FilterOrderAmount />
-      <Button className={clsx(styles.button)}>Применить</Button>
+      <Button color="grey" size="mini">
+        Применить
+      </Button>
     </div>
   )
 }

@@ -6,12 +6,20 @@
     --background-color-gray: #EBF0F5;
 }
 
-.filter {
+.block {
     display: flex;
-    gap: 1rem;
-    align-items: center;
+    align-items: flex-end;
+    gap: 0.25rem;
 }
 
-.filter:first-child {
-    margin-left: 1rem;
+.searchbarIconPosition {
+    position: relative;
+}
+
+.searchbarIndentMedium {
+    padding-left: 1.18rem;
+}
+
+.searchbarIndentBig {
+    padding-left: 1.75rem;
 }
