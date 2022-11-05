@@ -2,6 +2,7 @@ import FilterRegistrationDate from './registrationDate/FilterRegistrationDate'
 import FilterOrderStatus from './orderStatus/FilterOrderStatus'
 import FilterOrderAmount from './orderAmount/FilterOrderAmount'
 import Button from '../../../../shared/Button/Button'
+
 import styles from './Filter.module.css'
 
 export default function Filter() {
@@ -10,7 +11,7 @@ export default function Filter() {
       <FilterRegistrationDate />
       <FilterOrderStatus />
       <FilterOrderAmount />
-      <Button color="grey" size="mini">
+      <Button color="grey" size="mini" className={styles.position}>
         Применить
       </Button>
     </div>

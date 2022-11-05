@@ -11,3 +11,12 @@
 .searchbarIndentSmall {
     padding-left: 0.5rem;
 }
+
+.position {
+    position: absolute;
+    left: 2rem;
+}
+
+.buttonPosition {
+    top: 2.1rem;
+}

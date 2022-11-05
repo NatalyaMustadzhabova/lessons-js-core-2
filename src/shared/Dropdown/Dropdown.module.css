@@ -1,16 +1,36 @@
-.dropdown {
-    display: flex;
-    position: relative;
+:root {
+    --background-color-white: #FFFFFF;
+    --background-color-day-light-blue: #BAD8F5;
+    --background-color-blue: #459DF5;
 }
 
-.overlay {
+input:checked + span {
+    color: var(--background-color-blue);
+}
+
+.dropdown {
+    background: var(--background-color-white);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 10rem;
+    height: 13rem;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+}
+
+.label {
     display: flex;
-    gap: 0.5rem;
-    position: absolute;
-    right: -45rem;
-    margin-top: 4rem;
-    width: 73rem;
-    height: 5.5rem;
-    border-radius: 0.3125rem;
-    background-color: #EBF0F5;
+    align-items: center;
+    height: 2rem;
+    padding-left: 1rem;
+}
+
+.label:first-child {
+    margin-top: 0.25rem;
+    padding-top: 0.5rem;
+}
+
+input::-webkit-input-placeholder {
+    color: var(--background-color-day-light-blue);
 }

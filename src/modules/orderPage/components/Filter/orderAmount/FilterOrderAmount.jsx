@@ -1,22 +1,24 @@
 import { useState } from 'react'
+
 import Input from '../../../../../shared/Input/Input'
-import styles from './../../Filter/orderAmount/FilterOrderAmount.module.css'
 import { ReactComponent as IconXMedium } from '../../../../../shared/Icon/icons/x-medium.svg'
+
+import styles from './../../Filter/orderAmount/FilterOrderAmount.module.css'
 
 export default function FilterOrderAmount() {
   const [valueAmountFrom, setValueAmountFrom] = useState('')
   const [valueAmountTo, setValueAmountTo] = useState('')
 
-  const handleChangeValueAmountFrom = (event) => {
-    setValueAmountFrom(event.target.value)
+  const handleChangeValueAmountFrom = ({ target: { value } }) => {
+    setValueAmountFrom(value)
   }
 
   const handleClearValueAmountFrom = () => {
     setValueAmountFrom('')
   }
 
-  const handleChangeValueAmountTo = (event) => {
-    setValueAmountTo(event.target.value)
+  const handleChangeValueAmountTo = ({ target: { value } }) => {
+    setValueAmountTo(value)
   }
 
   const handleClearValueAmountTo = () => {
@@ -36,6 +38,7 @@ export default function FilterOrderAmount() {
           onClick={handleClearValueAmountFrom}
           icon={IconXMedium}
           size="small"
+          classNameButton={styles.buttonPositionBig}
         />
       </div>
       <div className={styles.searchbarIconPosition}>
@@ -48,6 +51,7 @@ export default function FilterOrderAmount() {
           onClick={handleClearValueAmountTo}
           icon={IconXMedium}
           size="small"
+          classNameButton={styles.buttonPositionSmall}
         />
       </div>
     </div>

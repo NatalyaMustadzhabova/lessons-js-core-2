@@ -1,22 +1,24 @@
 import { useState } from 'react'
+
 import Input from '../../../../../shared/Input/Input'
-import styles from './FilterRegistrationDate.module.css'
 import { ReactComponent as IconXMedium } from '../../../../../shared/Icon/icons/x-medium.svg'
+
+import styles from './FilterRegistrationDate.module.css'
 
 export default function FilterRegistrationDate() {
   const [valueDateFrom, setValueDateFrom] = useState('')
   const [valueDateTo, setValueDateTo] = useState('')
 
-  const handleChangeValueDateFrom = (event) => {
-    setValueDateFrom(event.target.value)
+  const handleChangeValueDateFrom = ({ target: { value } }) => {
+    setValueDateFrom(value)
   }
 
   const handleClearValueDateFrom = () => {
     setValueDateFrom('')
   }
 
-  const handleChangeValueDateTo = (event) => {
-    setValueDateTo(event.target.value)
+  const handleChangeValueDateTo = ({ target: { value } }) => {
+    setValueDateTo(value)
   }
 
   const handleClearValueDateTo = () => {
@@ -36,7 +38,8 @@ export default function FilterRegistrationDate() {
           onClick={handleClearValueDateFrom}
           icon={IconXMedium}
           size="medium"
-        ></Input>
+          classNameButton={styles.buttonPositionBig}
+        />
       </div>
       <div className={styles.searchbarIconPosition}>
         <Input
@@ -48,7 +51,8 @@ export default function FilterRegistrationDate() {
           onClick={handleClearValueDateTo}
           icon={IconXMedium}
           size="medium"
-        ></Input>
+          classNameButton={styles.buttonPositionSmall}
+        />
       </div>
     </div>
   )

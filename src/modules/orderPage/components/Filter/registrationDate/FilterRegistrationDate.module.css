@@ -1,11 +1,3 @@
-:root {
-    --background-color-blue: #459DF5;
-    --background-color-white: #FFFFFF;
-    --background-color-purple: #8055FF;
-    --background-color-black: #000000;
-    --background-color-gray: #EBF0F5;
-}
-
 .block {
     display: flex;
     align-items: flex-end;
@@ -22,4 +14,12 @@
 
 .searchbarIndentBig {
     padding-left: 1.75rem;
+}
+
+.buttonPositionSmall {
+    top: 0.96rem;
+}
+
+.buttonPositionBig {
+    top: 2.1rem;
 }

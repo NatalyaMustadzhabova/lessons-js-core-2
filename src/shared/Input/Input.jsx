@@ -1,6 +1,6 @@
-import styles from './Input.module.css'
 import Button from '../Button/Button'
-import clsx from 'clsx'
+
+import styles from './Input.module.css'
 import classnames from 'classnames'
 
 export default function Input({
@@ -14,6 +14,7 @@ export default function Input({
   icon,
   readOnly,
   size,
+  classNameButton,
 }) {
   const sizeInput = {
     sizeSmall: 'small',
@@ -26,6 +27,8 @@ export default function Input({
     [styles.sizeMedium]: size === sizeInput.sizeMedium,
     [styles.sizeBig]: size === sizeInput.sizeBig,
   })
+
+  const buttonClass = classnames(styles.button, classNameButton)
 
   return (
     <label className={styles.text}>
@@ -45,7 +48,7 @@ export default function Input({
             color="white"
             icon={icon}
             onClick={onClick}
-            className={clsx(styles.button)}
+            className={buttonClass}
           />
         )}
       </div>

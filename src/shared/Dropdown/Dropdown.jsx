@@ -1,26 +1,30 @@
-import { cloneElement } from 'react'
-import { useState } from 'react'
-import styles from './Dropdown.module.css'
-import Button from '../Button/Button'
+import Checkbox from '../Checkbox/Checkbox'
 
-export default function Dropdown({ trigger, overlay }) {
-  const [isOpen, setIsOpen] = useState(true)
+import styles from '../Dropdown/Dropdown.module.css'
 
-  const toggleDropdown = () => {
-    setIsOpen((is) => !is)
-  }
-
-  const myToggle = cloneElement(trigger, { onClick: toggleDropdown }, 'Фильтры')
-
+export default function Dropdown({ className }) {
   return (
-    <div className={styles.dropdown}>
-      {myToggle}
-      {!isOpen && <div className={styles.overlay}>{overlay}</div>}
-      {!isOpen && (
-        <Button color="white" size="big">
-          Сбросить фильтры
-        </Button>
-      )}
+    <div className={className}>
+      <div className={styles.dropdown}>
+        <label className={styles.label}>
+          <Checkbox text={'Новый'} />
+        </label>
+        <label className={styles.label}>
+          <Checkbox text={'Расчет'} />
+        </label>
+        <label className={styles.label}>
+          <Checkbox text={'Подтвержден'} />
+        </label>
+        <label className={styles.label}>
+          <Checkbox text={'Отложен'} />
+        </label>
+        <label className={styles.label}>
+          <Checkbox text={'Выполнен'} />
+        </label>
+        <label className={styles.label}>
+          <Checkbox text={'Отменен'} />
+        </label>
+      </div>
     </div>
   )
 }

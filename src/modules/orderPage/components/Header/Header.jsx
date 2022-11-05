@@ -1,13 +1,15 @@
+import { useState } from 'react'
+
 import Button from '../../../../shared/Button/Button'
 import Input from '../../../../shared/Input/Input'
 import Filter from '../Filter/Filter'
-import styles from './Header.module.css'
-import clsx from 'clsx'
 import { ReactComponent as IconSun } from '../../../../shared/Icon/icons/sun.svg'
 import { ReactComponent as IconFilter } from '../../../../shared/Icon/icons/filter.svg'
 import { ReactComponent as IconRefresh } from '../../../../shared/Icon/icons/refresh.svg'
-import { useState } from 'react'
 import { ReactComponent as IconXMedium } from '../../../../shared/Icon/icons/x-medium.svg'
+
+import styles from './Header.module.css'
+import clsx from 'clsx'
 
 export default function Header() {
   const [valueNumber, setValueNumber] = useState('')
@@ -17,8 +19,8 @@ export default function Header() {
     setFilterOpen(!isFilterOpen)
   }
 
-  const handleChangeValueNumber = (event) => {
-    setValueNumber(event.target.value)
+  const handleChangeValueNumber = ({ target: { value } }) => {
+    setValueNumber(value)
   }
 
   const handleClearValueNumber = () => {
@@ -43,6 +45,7 @@ export default function Header() {
               onChange={handleChangeValueNumber}
               onClick={handleClearValueNumber}
               icon={IconXMedium}
+              classNameButton={styles.buttonPositionSmall}
             />
             <Button
               color={!isFilterOpen ? 'white' : 'blue'}
