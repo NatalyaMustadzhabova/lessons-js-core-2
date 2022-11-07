@@ -1,11 +1,11 @@
 import Header from './modules/orderPage/components/Header/Header'
-import TableOrders from './modules/orderPage/components/Table/TableOrders'
+import MainTable from './modules/orderPage/components/Table/MainTable'
 
 export default function App() {
   return (
     <div>
       <Header />
-      <TableOrders />
+      <MainTable />
     </div>
   )
 }

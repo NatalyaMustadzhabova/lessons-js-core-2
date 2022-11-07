@@ -1,0 +1,23 @@
+.body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+.body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.34);
+}
