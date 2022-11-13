@@ -1,0 +1,25 @@
+.icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.green {
+    fill: #0FB864;
+}
+
+.blue {
+    fill: #459DF5;
+}
+
+.orange {
+    fill: #FF8C56;
+}
+
+.purple {
+    fill: #8055FF;
+}
+
+.yellow {
+    fill: yellow;
+}
+

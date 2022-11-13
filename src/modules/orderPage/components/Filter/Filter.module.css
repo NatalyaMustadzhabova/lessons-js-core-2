@@ -1,0 +1,99 @@
+:root {
+    --background-color-blue: #459DF5;
+    --background-color-white: #FFFFFF;
+    --background-color-purple: #8055FF;
+    --background-color-black: #000000;
+    --background-color-gray: #EBF0F5;
+}
+
+.filter {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.block {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+
+.filter:first-child {
+    margin-left: 1rem;
+}
+
+.searchbarButton {
+    border: none;
+    position: absolute;
+    right: 0.15rem;
+    height: 1.5rem;
+    background-color: var(--background-color-white);
+}
+
+.searchbarButtonPositionBig {
+    top: 1.9rem;
+}
+
+.searchbarButtonPositionSmall {
+    top: 0.8rem;
+}
+
+.searchbarIconPosition {
+    position: relative;
+}
+
+.searchbar {
+    box-sizing: border-box;
+    height: 2rem;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid var(--background-color-blue);
+    font-weight: 400;
+    font-size: 0.8125rem;
+    margin-top: 0.5rem;
+}
+
+.searchbarIndentSmall {
+    padding-left: 0.5rem;
+}
+
+.searchbarIndentMedium {
+    padding-left: 1.18rem;
+}
+
+.searchbarIndentBig {
+    padding-left: 1.75rem;
+}
+
+.searchbarSmall {
+    width: 7.875rem;
+}
+
+.searchbarMedium {
+    width: 8.875rem;
+}
+
+.searchbarBig {
+    width: 12rem;
+}
+
+.button {
+    display: flex;
+    height: 2rem;
+    width: 5.5rem;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--background-color-gray);
+    fill: var(--background-color-blue);
+    color: var(--background-color-blue);
+    border: none;
+    margin-top: 1.5rem;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+}
+
+.buttonBlue {
+    fill: var(--background-color-blue);
+}

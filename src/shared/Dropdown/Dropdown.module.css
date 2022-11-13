@@ -1,0 +1,16 @@
+.dropdown {
+    position: relative;
+    display: contents;
+}
+
+.overlay {
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    /* right: -45rem; */
+    margin-top: 3rem;
+    /* width: 73rem; */
+    height: 5.5rem;
+    border-radius: 0.3125rem;
+    background-color: #EBF0F5;
+}

@@ -1,0 +1,27 @@
+.checkbox {
+    width: 2rem;
+}
+
+.number {
+    width: 6.75rem;
+}
+
+.date {
+    width: 11rem;
+    align-items: center;
+}
+
+.status {
+    width: 11rem;
+    align-items: center;
+}
+
+.position {
+    width: 6rem;
+    align-items: center;
+}
+
+.amount {
+    width: 8rem;
+    align-items: center;
+}

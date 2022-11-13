@@ -1,0 +1,65 @@
+:root {
+    --background-color-blue: #459DF5;
+    --background-color-white: #FFFFFF;
+    --background-color-gray: #EBF0F5;
+    --background-color-red: #f53152;
+}
+
+.iconSize {
+    width: 1rem;
+}
+
+.button {
+    display: flex;
+    height: 2rem;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    gap: 0.25rem;
+}
+
+.colorBlue {
+    background-color: var(--background-color-blue);
+    fill: var(--background-color-white);
+    color: var(--background-color-white);
+}
+
+.colorWhite {
+    background-color: var(--background-color-white);
+    fill: var(--background-color-blue);
+    color: var(--background-color-blue);
+}
+
+.colorGrey {
+    background-color: var(--background-color-gray);
+    fill: var(--background-color-blue);
+    color: var(--background-color-blue);
+}
+
+.colorRed {
+    background-color: var(--background-color-red);
+    fill: var(--background-color-white);
+    color: var(--background-color-white);
+}
+
+.sizeMini {
+    width: 6.875rem;
+}
+
+.sizeSmall {
+    width: 7.06rem;
+}
+
+.sizeMedium {
+    width: 8.68rem;
+}
+
+.sizeBig {
+    width: 9.25rem;
+}
+
