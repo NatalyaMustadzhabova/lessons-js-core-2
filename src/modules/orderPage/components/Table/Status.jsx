@@ -35,7 +35,7 @@ export default function Status({ status, color }) {
         fill={statusDict[status].iconColor}
         className={colorForIcon}
       />
-      <span>{statusDict[status].text}</span>
+      <div className={colorForIcon}>{statusDict[status].text}</div>
     </>
   )
 }
