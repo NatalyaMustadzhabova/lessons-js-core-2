@@ -1,11 +1,12 @@
 import styles from './Checkbox.module.css'
-import clsx from 'clsx'
+import Icon from '../Icon/Icon'
 
 export default function Checkbox({ text }) {
   return (
-    <div className={clsx(styles.checkbox)}>
-      <input type="checkbox" />
+    <label className={styles.checkbox}>
+      <input type="checkbox" className={styles.input} />
+      <Icon type="checkmark" className={styles.icon} />
       <span>{text}</span>
-    </div>
+    </label>
   )
 }

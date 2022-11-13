@@ -1,7 +1,6 @@
 .table {
     display: flex;
     flex-direction: column;
-    /*height: 100%;*/
     font-size: 13px;
     overflow: hidden;
     margin-left: 3rem;

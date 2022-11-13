@@ -1,5 +1,4 @@
-import { cloneElement } from 'react'
-import { useState } from 'react'
+import { cloneElement, useState } from 'react'
 import styles from './Dropdown.module.css'
 
 export default function Dropdown({ trigger, overlay }) {

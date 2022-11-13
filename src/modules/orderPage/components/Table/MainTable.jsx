@@ -5,12 +5,10 @@ import Table from '../../../../shared/Table/Table'
 
 export default function MainTable() {
   return (
-    <>
-      <Table>
-        <MainTableHeader />
-        <MainTableBody />
-        <MainTableFooter />
-      </Table>
-    </>
+    <Table>
+      <MainTableHeader />
+      <MainTableBody />
+      <MainTableFooter />
+    </Table>
   )
 }

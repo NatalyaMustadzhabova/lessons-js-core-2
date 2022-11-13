@@ -8,20 +8,20 @@
 
 .date {
     width: 11rem;
+    align-items: center;
 }
 
 .status {
     width: 11rem;
+    align-items: center;
 }
 
 .position {
-    min-width: 6rem;
+    width: 6rem;
+    align-items: center;
 }
 
 .amount {
-    min-width: 8rem;
-}
-
-.name {
-    width: 100%;
+    width: 8rem;
+    align-items: center;
 }
