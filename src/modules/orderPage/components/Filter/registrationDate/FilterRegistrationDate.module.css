@@ -1,0 +1,27 @@
+.block {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+
+.searchbarIconPosition {
+    position: relative;
+}
+
+.searchbarIndentMedium {
+    padding-left: 1.18rem;
+    width: 8.875rem;
+}
+
+.searchbarIndentBig {
+    padding-left: 1.75rem;
+    width: 8.875rem;
+}
+
+.buttonPositionSmall {
+    top: 0.96rem;
+}
+
+.buttonPositionBig {
+    top: 2.1rem;
+}

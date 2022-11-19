@@ -1,0 +1,14 @@
+.filter {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.filter:first-child {
+    margin-left: 1rem;
+}
+
+.position {
+    margin-top: 1.5rem;
+    width: 6.875rem;
+}

@@ -1,0 +1,40 @@
+input::-webkit-input-placeholder {
+    color: #BAD8F5;
+}
+
+.input {
+    box-sizing: border-box;
+    height: 2rem;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid #459DF5;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    margin-top: 0.5rem;
+}
+
+.prefix {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0.5rem;
+    left: 0.5rem;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 0.8125rem;
+}
+
+.button {
+    position: absolute;
+    right: 0.4rem;
+    height: 1rem;
+    padding: 0;
+}
+
+.incorrect {
+    border-color: #F53152;
+}
+
+.blocked {
+    background-color: #459DF5;
+}

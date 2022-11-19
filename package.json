@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "babel": "^6.23.0",
+    "classnames": "^2.3.2",
+    "clsx": "^1.2.1",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
@@ -66,7 +71,6 @@
     }
   },
   "description": "",
-  "main": "App.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NatalyaMustadzhabova/lessons-js-core-2.git"
@@ -75,6 +79,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NatalyaMustadzhabova/lessons-js-core-2/issues"
-  },
-  "homepage": "https://github.com/NatalyaMustadzhabova/lessons-js-core-2#readme"
+  }
 }
