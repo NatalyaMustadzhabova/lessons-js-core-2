@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import Input from '../../../../../shared/Input/Input'
-import { ReactComponent as IconXMedium } from '../../../../../shared/Icon/icons/x-medium.svg'
+import { icon } from '../../../../../shared/Icon/icons/Icon'
 
 import styles from './FilterRegistrationDate.module.css'
 
@@ -35,8 +35,8 @@ export default function FilterRegistrationDate() {
           value={valueDateFrom}
           prefix="c"
           onChange={handleChangeValueDateFrom}
-          onClick={handleClearValueDateFrom}
-          icon={IconXMedium}
+          onReset={handleClearValueDateFrom}
+          icon={icon.xMedium}
           size="medium"
           classNameButton={styles.buttonPositionBig}
         />
@@ -48,8 +48,8 @@ export default function FilterRegistrationDate() {
           value={valueDateTo}
           prefix="по"
           onChange={handleChangeValueDateTo}
-          onClick={handleClearValueDateTo}
-          icon={IconXMedium}
+          onReset={handleClearValueDateTo}
+          icon={icon.xMedium}
           size="medium"
           classNameButton={styles.buttonPositionSmall}
         />

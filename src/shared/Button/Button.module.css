@@ -39,22 +39,18 @@
     color: var(--background-color-blue);
 }
 
-.sizeMini {
-    width: 6.875rem;
-}
+/*.sizeMini {*/
+/*    width: 6.875rem;*/
+/*}*/
 
-.sizeSmall {
-    width: 7.06rem;
-}
+/*.sizeSmall {*/
+/*    width: 7.06rem;*/
+/*}*/
 
-.sizeMedium {
-    width: 8.68rem;
-}
+/*.sizeMedium {*/
+/*    width: 8.68rem;*/
+/*}*/
 
-.sizeBig {
-    width: 9.25rem;
-}
-
-.button:hover {
-    opacity: 0.6;
-}
+/*.sizeBig {*/
+/*    width: 9.25rem;*/
+/*}*/

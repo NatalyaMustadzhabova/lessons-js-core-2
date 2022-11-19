@@ -1,30 +1,32 @@
-import Checkbox from '../Checkbox/Checkbox'
-
 import styles from '../Dropdown/Dropdown.module.css'
+import { useState } from 'react'
 
-export default function Dropdown({ className }) {
+export default function Dropdown({ overlay }) {
+  const [isOpen] = useState(false)
+  // const refDropdown = useRef();
+
+  // useEffect(() => {
+  //     const onClick = (e) => {
+  //         if (!refDropdown.current.contains(e.target)) {
+  //             setIsOpen(false);
+  //         }
+  //     };
+  //     document.addEventListener("mousedown", onClick);
+  //     return () => {
+  //         document.removeEventListener("mousedown", onClick);
+  //     };
+  // }, []);
+
+  // const toggleDropdown = () => {
+  //     setIsOpen((is) => !is)
+  // }
+
+  // const myToggle = cloneElement(trigger, {onClick: toggleDropdown})
+
   return (
-    <div className={className}>
-      <div className={styles.dropdown}>
-        <label className={styles.label}>
-          <Checkbox text={'Новый'} />
-        </label>
-        <label className={styles.label}>
-          <Checkbox text={'Расчет'} />
-        </label>
-        <label className={styles.label}>
-          <Checkbox text={'Подтвержден'} />
-        </label>
-        <label className={styles.label}>
-          <Checkbox text={'Отложен'} />
-        </label>
-        <label className={styles.label}>
-          <Checkbox text={'Выполнен'} />
-        </label>
-        <label className={styles.label}>
-          <Checkbox text={'Отменен'} />
-        </label>
-      </div>
+    <div className={styles.dropdown}>
+      {/*{myToggle}*/}
+      {!isOpen && <div className={styles.overlay}>{overlay}</div>}
     </div>
   )
 }

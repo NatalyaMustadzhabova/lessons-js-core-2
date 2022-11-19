@@ -1,9 +1,9 @@
-import Header from './modules/orderPage/components/Header/Header'
+import Page from './modules/orderPage/components/Page/Page'
 
 export default function App() {
   return (
     <div>
-      <Header />
+      <Page />
     </div>
   )
 }

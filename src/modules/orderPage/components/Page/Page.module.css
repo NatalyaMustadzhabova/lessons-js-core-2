@@ -1,0 +1,6 @@
+.common {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    height: 100%;
+}

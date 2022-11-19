@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import Input from '../../../../../shared/Input/Input'
-import { ReactComponent as IconXMedium } from '../../../../../shared/Icon/icons/x-medium.svg'
+import { icon } from '../../../../../shared/Icon/icons/Icon'
 
 import styles from './../../Filter/orderAmount/FilterOrderAmount.module.css'
 
@@ -35,9 +35,8 @@ export default function FilterOrderAmount() {
           value={valueAmountFrom}
           prefix="от"
           onChange={handleChangeValueAmountFrom}
-          onClick={handleClearValueAmountFrom}
-          icon={IconXMedium}
-          size="small"
+          onReset={handleClearValueAmountFrom}
+          icon={icon.xMedium}
           classNameButton={styles.buttonPositionBig}
         />
       </div>
@@ -48,9 +47,8 @@ export default function FilterOrderAmount() {
           value={valueAmountTo}
           prefix="до"
           onChange={handleChangeValueAmountTo}
-          onClick={handleClearValueAmountTo}
-          icon={IconXMedium}
-          size="small"
+          onReset={handleClearValueAmountTo}
+          icon={icon.xMedium}
           classNameButton={styles.buttonPositionSmall}
         />
       </div>

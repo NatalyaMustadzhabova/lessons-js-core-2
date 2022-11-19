@@ -4,12 +4,17 @@
     gap: 0.25rem;
 }
 
+.blockEnd {
+    display: flex;
+}
+
 .searchbarIconPosition {
     position: relative;
 }
 
 .searchbarIndentSmall {
     padding-left: 0.5rem;
+    width: 12rem;
 }
 
 .position {

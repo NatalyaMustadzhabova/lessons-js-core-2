@@ -11,7 +11,7 @@ export default function Filter() {
       <FilterRegistrationDate />
       <FilterOrderStatus />
       <FilterOrderAmount />
-      <Button color="grey" size="mini" className={styles.position}>
+      <Button color="grey" className={styles.position}>
         Применить
       </Button>
     </div>

@@ -31,14 +31,10 @@ input::-webkit-input-placeholder {
     padding: 0;
 }
 
-.sizeSmall {
-    width: 7.875rem;
+.incorrect {
+    border-color: #F53152;
 }
 
-.sizeMedium {
-    width: 8.875rem;
-}
-
-.sizeBig {
-    width: 12rem;
+.blocked {
+    background-color: #459DF5;
 }

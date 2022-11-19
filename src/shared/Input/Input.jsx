@@ -9,23 +9,17 @@ export default function Input({
   value,
   onChange,
   className,
-  onClick,
+  onReset,
   prefix,
-  icon,
   readOnly,
-  size,
   classNameButton,
+  icon,
+  incorrect,
+  blocked,
 }) {
-  const sizeInput = {
-    sizeSmall: 'small',
-    sizeMedium: 'medium',
-    sizeBig: 'big',
-  }
-
   const blockClass = classnames(styles.input, className, {
-    [styles.sizeSmall]: size === sizeInput.sizeSmall,
-    [styles.sizeMedium]: size === sizeInput.sizeMedium,
-    [styles.sizeBig]: size === sizeInput.sizeBig,
+    [styles.incorrect]: incorrect,
+    [styles.blocked]: blocked,
   })
 
   const buttonClass = classnames(styles.button, classNameButton)
@@ -41,15 +35,14 @@ export default function Input({
           value={value}
           onChange={onChange}
           readOnly={readOnly}
-          size={size}
         />
         {value && (
           <Button
             color="white"
             icon={icon}
-            onClick={onClick}
+            onClick={onReset}
             className={buttonClass}
-          />
+          ></Button>
         )}
       </div>
     </label>

@@ -1,6 +1,5 @@
 .header {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    height: 100%;
 }
 
 .firstLine {
@@ -11,6 +10,7 @@
 
 .secondLine {
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -39,9 +39,7 @@
 .filter {
     display: flex;
     gap: 0.5rem;
-    position: absolute;
     width: 100%;
-    margin-right: 5rem;
     margin-top: 1rem;
     height: 5.5rem;
     border-radius: 0.3125rem;
@@ -52,4 +50,20 @@
     top: -1.5rem;
     position: relative;
     right: -18.5rem;
+}
+
+.buttonSizeMedium {
+    width: 8.68rem;
+}
+
+.buttonSizeSmall {
+    width: 7.06rem;
+}
+
+.buttonSizeBig {
+    width: 9.25rem;
+}
+
+.buttonSizeMini {
+    width: 6.875rem;
 }
